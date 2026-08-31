@@ -81,8 +81,10 @@
     .hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;margin-top:1.8rem}
     .photo-preview-section{background:var(--ivory);border-top:1px solid var(--blush-200);padding:clamp(3.5rem,8vw,6rem) 1.5rem;text-align:center}
     .photo-preview-copy{margin:0 auto 2rem;max-width:42rem}.photo-preview-copy .eyebrow{color:var(--berry-600)}.photo-preview-copy h2{color:var(--berry-700);font-family:"Cormorant Garamond",serif;font-size:clamp(2.5rem,6vw,4.3rem);font-weight:500;line-height:1;margin:1rem 0}.photo-preview-copy p:last-child{color:#80606b;font-family:"Cormorant Garamond",serif;font-size:1.08rem;line-height:1.6;margin:0}
-    .photo-slideshow{aspect-ratio:16/10;background:transparent;none;box-shadow:none;margin:0 auto;max-height:70vh;max-width:960px;overflow:hidden;position:relative;width:100%}
-    .photo-slides{inset:0;position:absolute}.photo-slide{height:100%;inset:0;object-fit:contain;opacity:0;position:absolute;transform:scale(.98);transition:opacity 1s ease,transform 5s ease;width:100%}.photo-slide.active{opacity:1;transform:scale(1);z-index:1}
+    .photo-slideshow{aspect-ratio:16/10;background:transparent;box-shadow:none;margin:0 auto;max-height:70vh;max-width:960px;overflow:hidden;position:relative;width:100%}
+    .photo-slides{inset:0;position:absolute}.photo-slide{height:100%;inset:0;object-fit:contain;opacity:0;position:absolute;transform:translateX(2%) scale(.99);transition:opacity .45s ease,transform .45s ease;width:100%}.photo-slide.active{opacity:1;transform:translateX(0) scale(1);z-index:1}
+    .carousel-button{align-items:center;background:rgba(255,253,249,.9);border:1px solid rgba(199,154,68,.55);border-radius:50%;box-shadow:0 6px 20px rgba(78,36,51,.18);color:var(--berry-700);display:flex;font-family:"Cormorant Garamond",serif;font-size:2rem;height:48px;justify-content:center;line-height:1;padding:0;position:absolute;top:50%;transform:translateY(-50%);transition:background .2s ease,transform .2s ease;width:48px;z-index:3}.carousel-button:hover{background:var(--ivory);transform:translateY(-50%) scale(1.06)}.carousel-button:focus-visible{outline:2px solid var(--gold-500);outline-offset:3px}.carousel-button.previous{left:clamp(.5rem,2vw,1.25rem)}.carousel-button.next{right:clamp(.5rem,2vw,1.25rem)}
+    .carousel-position{background:rgba(78,36,51,.72);border-radius:999px;bottom:.75rem;color:white;font-size:.58rem;font-weight:600;left:50%;letter-spacing:.12em;padding:.42rem .72rem;position:absolute;transform:translateX(-50%);z-index:3}.carousel-button[hidden],.carousel-position[hidden]{display:none}
     .countdown-section{background:rgba(255,253,249,.9);border-bottom:1px solid var(--blush-200);border-top:1px solid var(--blush-200);padding:3.5rem 1.5rem 4rem;text-align:center}
     .countdown-grid{display:grid;grid-template-columns:repeat(4,1fr);margin:2rem auto 0;max-width:760px}.countdown-item{border-left:1px solid var(--blush-200);padding:.5rem}.countdown-item:last-child{border-right:1px solid var(--blush-200)}
     .countdown-item strong{color:var(--berry-600);display:block;font-family:"Cormorant Garamond",serif;font-size:clamp(2.25rem,6vw,4.2rem);font-weight:500;line-height:1}.countdown-item span{color:#936c79;display:block;font-size:.59rem;font-weight:600;letter-spacing:.18em;margin-top:.75rem;text-transform:uppercase}
@@ -102,7 +104,7 @@
     .rsvp-section{background:var(--berry-600);display:grid;gap:clamp(3rem,7vw,7rem);grid-template-columns:minmax(0,.85fr) minmax(340px,1.15fr);padding:clamp(5rem,10vw,8.5rem) max(1.5rem,calc((100vw - 1120px)/2))}.rsvp-intro{align-self:center;color:var(--blush-50)}.rsvp-intro .eyebrow{color:var(--blush-200)}.rsvp-intro h2{font-family:"Cormorant Garamond",serif;font-size:clamp(2.8rem,6vw,4.8rem);font-weight:500;line-height:.98;margin:1rem 0 1.5rem}.rsvp-intro>p:last-child{color:#f3dfe5;font-family:"Cormorant Garamond",serif;font-size:1.15rem;line-height:1.7;max-width:30rem}.rsvp-form{background:var(--ivory);box-shadow:0 26px 70px rgba(63,21,36,.2);padding:clamp(1.7rem,5vw,3.2rem)}.rsvp-form>label,.rsvp-form legend{color:var(--berry-700);display:block;font-size:.65rem;font-weight:600;letter-spacing:.15em;margin-bottom:.75rem;text-transform:uppercase}.rsvp-form input[type=text]{background:transparent;border:0;border-bottom:1px solid var(--rose-300);border-radius:0;color:var(--berry-900);font-family:"Cormorant Garamond",serif;font-size:1.25rem;outline:none;padding:.75rem 0;width:100%}.rsvp-form fieldset{border:0;margin:2.2rem 0 1.7rem;padding:0}.attendance-choice{align-items:center;border:1px solid var(--blush-200);cursor:pointer;display:flex;gap:.9rem;padding:1rem}.attendance-choice:hover{background:var(--blush-50)}.attendance-choice input{accent-color:var(--berry-600)}.attendance-choice span{display:flex;flex-direction:column;gap:.2rem}.attendance-choice strong{color:var(--berry-700);font-family:"Cormorant Garamond",serif;font-size:1.12rem}.attendance-choice small{color:#94717d;font-size:.71rem}.submit-button{align-items:center;background:var(--gold-500);border:0;color:var(--berry-900);display:flex;font-size:.67rem;font-weight:600;gap:.5rem;height:50px;justify-content:center;letter-spacing:.16em;text-transform:uppercase;width:100%}.submit-button:hover{background:#edcb91}.submit-button:disabled{cursor:wait;opacity:.7}.form-message{font-family:"Cormorant Garamond",serif;font-size:1rem;line-height:1.45;margin:1rem 0 0;min-height:1.45rem;text-align:center}.form-message.success{color:#47705a}.form-message.notice{color:#a05c43}
 
     @media(max-width:760px){.site-header{height:68px}.site-header nav{gap:1rem;margin-left:1rem}.nav-link{font-size:.54rem}.page{min-height:calc(100vh - 68px)}.hero{min-height:calc(100svh - 68px)}.entourage-grid,.detail-grid,.rsvp-section{grid-template-columns:1fr}.two-columns ul{columns:1}}
-    @media(max-width:520px){.date-lockup{gap:.7rem}.date-lockup span{font-size:.52rem}.countdown-grid{gap:.2rem}.countdown-item strong{font-size:2rem}.countdown-item span{font-size:.48rem;letter-spacing:.08em}.photo-slideshow{aspect-ratio:4/5}.entourage-grid,.detail-grid{padding-left:1rem;padding-right:1rem}.timeline-item{gap:.8rem;grid-template-columns:50px 1fr}.timeline-marker{height:50px;width:50px}.timeline-item:not(:last-child)::after{height:calc(100% - 50px);left:24px;top:50px}.color-motif{grid-template-columns:1fr;justify-items:center}.color-swatch{display:grid;grid-template-columns:3rem 1fr;justify-content:initial;width:min(100%,10.5rem)}.color-swatch div{width:100%}.modal-card{padding:1.3rem}}
+    @media(max-width:520px){.date-lockup{gap:.7rem}.date-lockup span{font-size:.52rem}.countdown-grid{gap:.2rem}.countdown-item strong{font-size:2rem}.countdown-item span{font-size:.48rem;letter-spacing:.08em}.photo-slideshow{aspect-ratio:4/5}.carousel-button{font-size:1.7rem;height:42px;width:42px}.entourage-grid,.detail-grid{padding-left:1rem;padding-right:1rem}.timeline-item{gap:.8rem;grid-template-columns:50px 1fr}.timeline-marker{height:50px;width:50px}.timeline-item:not(:last-child)::after{height:calc(100% - 50px);left:24px;top:50px}.color-motif{grid-template-columns:1fr;justify-items:center}.color-swatch{display:grid;grid-template-columns:3rem 1fr;justify-content:initial;width:min(100%,10.5rem)}.color-swatch div{width:100%}.modal-card{padding:1.3rem}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
   </style>
 </head>
@@ -142,8 +144,11 @@
       </div>
       <section class="photo-preview-section" aria-labelledby="photoPreviewTitle">
         <div class="photo-preview-copy"><p class="eyebrow"> </p><h2 id="photoPreviewTitle">Our Story in Frames</h2><p>A collection of our favorite moments, shared with you.</p></div>
-        <div class="photo-slideshow" id="photoSlideshow" aria-label="Automatic wedding photo slideshow">
+        <div class="photo-slideshow" id="photoSlideshow" role="region" aria-roledescription="carousel" aria-label="Wedding photo carousel" tabindex="0">
           <div class="photo-slides" id="photoSlides"></div>
+          <button class="carousel-button previous" id="previousSlide" type="button" aria-label="Show previous photo">&#8249;</button>
+          <button class="carousel-button next" id="nextSlide" type="button" aria-label="Show next photo">&#8250;</button>
+          <div class="carousel-position" id="carouselPosition" aria-live="polite"></div>
         </div>
       </section>
       <section class="countdown-section" aria-labelledby="countdownTitle">
@@ -219,7 +224,11 @@
       }
     }
 
+    const photoSlideshow = document.getElementById("photoSlideshow");
     const photoSlides = document.getElementById("photoSlides");
+    const previousSlideButton = document.getElementById("previousSlide");
+    const nextSlideButton = document.getElementById("nextSlide");
+    const carouselPosition = document.getElementById("carouselPosition");
 
     /* Slideshow photos: keep hero1.jpg through hero10.jpg beside this HTML file. */
     const slideshowImageFiles = [
@@ -235,26 +244,18 @@
       "hero10.jpg"
     ];
     const previewImages = slideshowImageFiles.map((url,index)=>({url,name:`Wedding photo ${index+1}`}));
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     let activeSlide = 0;
-    let slideshowTimer;
-
-    function stopSlideshow(){
-      clearInterval(slideshowTimer);
-      slideshowTimer=undefined;
-    }
-
-    function startSlideshow(){
-      stopSlideshow();
-      if(previewImages.length>1&&!reduceMotion.matches&&!document.hidden){
-        slideshowTimer=setInterval(()=>showSlide(activeSlide+1),5000);
-      }
-    }
+    let touchStartX = 0;
 
     function showSlide(index){
       if(!previewImages.length)return;
       activeSlide=(index+previewImages.length)%previewImages.length;
-      photoSlides.querySelectorAll(".photo-slide").forEach((slide,i)=>slide.classList.toggle("active",i===activeSlide));
+      photoSlides.querySelectorAll(".photo-slide").forEach((slide,i)=>{
+        const isActive=i===activeSlide;
+        slide.classList.toggle("active",isActive);
+        slide.setAttribute("aria-hidden",String(!isActive));
+      });
+      carouselPosition.textContent=`${activeSlide+1} / ${previewImages.length}`;
     }
 
     function renderSlideshow(){
@@ -269,10 +270,22 @@
       });
       activeSlide=Math.min(activeSlide,Math.max(previewImages.length-1,0));
       showSlide(activeSlide);
-      startSlideshow();
+      const hasMultiplePhotos=previewImages.length>1;
+      previousSlideButton.hidden=!hasMultiplePhotos;
+      nextSlideButton.hidden=!hasMultiplePhotos;
+      carouselPosition.hidden=!previewImages.length;
     }
-    document.addEventListener("visibilitychange",()=>document.hidden?stopSlideshow():startSlideshow());
-    reduceMotion.addEventListener?.("change",startSlideshow);
+    previousSlideButton.addEventListener("click",()=>showSlide(activeSlide-1));
+    nextSlideButton.addEventListener("click",()=>showSlide(activeSlide+1));
+    photoSlideshow.addEventListener("keydown",event=>{
+      if(event.key==="ArrowLeft"){event.preventDefault();showSlide(activeSlide-1)}
+      if(event.key==="ArrowRight"){event.preventDefault();showSlide(activeSlide+1)}
+    });
+    photoSlideshow.addEventListener("touchstart",event=>{touchStartX=event.changedTouches[0].clientX},{passive:true});
+    photoSlideshow.addEventListener("touchend",event=>{
+      const swipeDistance=event.changedTouches[0].clientX-touchStartX;
+      if(Math.abs(swipeDistance)>50)showSlide(activeSlide+(swipeDistance<0?1:-1));
+    },{passive:true});
     renderSlideshow();
 
     const entourageGroups = [
